@@ -8,7 +8,7 @@ export default class MovieList extends Component {
     return (
       <div>
         <div className="movie-list section">
-          <div class="row">
+          <div style = {{display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
             {movies &&
               movies.map(movie => {
                 return (
