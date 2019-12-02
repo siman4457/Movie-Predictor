@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-// import { movies } from "../../data";
 import MovieCard from "./MovieCard";
 
 export default class MovieList extends Component {
   render() {
     const { movies } = this.props;
+    console.log('find key of each movie',movies)
     return (
       <div>
         <div className="movie-list section">
@@ -15,7 +15,7 @@ export default class MovieList extends Component {
               movies.map(movie => {
                 return (
                   <div className="column is-one-third">
-                    <MovieCard movie={movie} />
+                    <MovieCard key={movie.title} movie={movie} />
                   </div>
                 );
               })}

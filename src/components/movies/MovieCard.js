@@ -8,14 +8,8 @@ export default class MovieCard extends Component {
 
     return (
       <div>
-        <Link
-          to={{
-            pathname: "/movie-view/" + movie.title,
-            state: {
-              movie
-            }
-          }}
-        >
+        
+        <Link to={"/movie-view/" + movie.title} style={{textDecorationLine: 'none'}}>
           <div style={{ margin: "30px", height: 700 }} className="card">
             <div className="card-image" style={{ height: 500 }}>
               <figure className="image is-4by3" style={{ height: 500 }}>
