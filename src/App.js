@@ -14,7 +14,7 @@ function App() {
           <Switch>
             {/* PUBLIC PAGES */}
             <Route exact path="/" component={Home} />
-            {/* <Route exact path="/movie/:id" component={MovieView} /> */}
+            <Route exact path="/movie-view/:id" component={MovieView} />
           </Switch>
         </header>
       </div>

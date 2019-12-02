@@ -30,10 +30,6 @@ export default class Home extends Component {
     const isSubmitted = this.state.isSubmitted;
     const response = this.state.response;
 
-    // showMovie = () => {
-    //   movies;
-    // };
-
     return (
       <div>
         <section className="hero is-primary">
@@ -73,7 +69,6 @@ export default class Home extends Component {
         <div className="container">
           <div className="notification">
             <h1 className="title has-text-centered">Upcoming Movies</h1>
-            {/* <MovieList movies={movies}></MovieList> */}
             {isSubmitted ? (
               <MovieList movies={[response]} />
             ) : (
