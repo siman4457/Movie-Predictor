@@ -4,7 +4,7 @@ import MovieList from "../movies/MovieList.js";
 import { findElement } from "../helpers";
 
 export default class Home extends Component {
-  state = { query: "", isSubmitted: false };
+  state = { query: "", isSubmitted: false, response: null };
 
   handleChange = e => {
     this.setState({
@@ -16,18 +16,20 @@ export default class Home extends Component {
   handleSubmit = e => {
     e.preventDefault();
     var input_query = this.state.query;
-    this.setState({
-      isSubmitted: true
-    });
     var movies_arr = data["movies"];
     var response = findElement(movies_arr, "title", input_query);
-
+    this.setState({
+      isSubmitted: true,
+      response: response
+    });
     return response;
   };
 
   render() {
     const movies = data.movies;
     const isSubmitted = this.state.isSubmitted;
+    const response = this.state.response;
+
     // showMovie = () => {
     //   movies;
     // };
@@ -72,7 +74,11 @@ export default class Home extends Component {
           <div className="notification">
             <h1 className="title has-text-centered">Upcoming Movies</h1>
             {/* <MovieList movies={movies}></MovieList> */}
-            {isSubmitted ? null : <MovieList movies={movies}></MovieList>}
+            {isSubmitted ? (
+              <MovieList movies={[response]} />
+            ) : (
+              <MovieList movies={movies} />
+            )}
           </div>
         </div>
       </div>
