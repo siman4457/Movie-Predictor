@@ -10,7 +10,7 @@ export default class MovieCard extends Component {
       <div>
         
         <Link to={"/movie-view/" + movie.title} style={{textDecorationLine: 'none'}}>
-          <div style={{ margin: "30px", height: 700 }} className="card">
+          <div style={{ margin: "30px", height: 700 }} className="card movie-card">
             <div className="card-image" style={{ height: 500 }}>
               <figure className="image is-4by3" style={{ height: 500 }}>
                 <img src={movie.image} alt="Placeholder image" />

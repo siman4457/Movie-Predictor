@@ -9,3 +9,7 @@ body {
   height: auto;
   width: 100%;
 }
+
+.movie-card:hover {
+  box-shadow: 0 15px 18px 0 rgba(0,0,0,0.7);
+}
