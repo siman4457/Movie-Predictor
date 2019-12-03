@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { findElement } from "../helpers";
 import data from "../../data.json";
 import Footer from "../layout/Footer.js";
+import { Link } from "react-router-dom";
 // import { Footer } from "react-bulma-components";
 
 export default class MovieView extends Component {
@@ -25,6 +26,12 @@ export default class MovieView extends Component {
         <div className="container">
           <div className="details">
             <br></br>
+            <div style = {{margin: 30}}>
+              <Link to={".."}>
+                <div className = "back-button">
+                </div> 
+              </Link>
+            </div>
             <h1 className="title has-text-centered" style={{fontSize: 75}}>{movie.title}</h1>
             <div style = {{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
                 <div style = {{paddingRight: 20, paddingLeft: 20, marginBottom: 100, boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}>
