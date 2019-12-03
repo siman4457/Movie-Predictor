@@ -21,17 +21,25 @@ export default class MovieView extends Component {
         <br />
         <br />
         <div className="container">
-          <div className="notification">
-            <h1 className="title has-text-centered">{movie.title}</h1>
-            <img src={movie.image} alt="Placeholder image"/>
-            <h3 style={{ alignSelf: "center" }}>{movie.date}</h3>
-            <h1 style={{ fontSize: 30, margin: 0 }}>
-                          {movie.rotten}
-                        </h1>
-            <h1 style={{ fontSize: 30, margin: 0 }}>
-                          {movie.metacritic}
-                        </h1>
-
+          <div className="details">
+            <h1 className="title has-text-centered" style={{fontSize: 75}}>{movie.title}</h1>
+            
+              <div style = {{display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center"}}>
+                <div style = {{display: "flex", flexDirection: "column"}}>
+                  <img src={movie.image} alt="Placeholder image" style ={{height: 600, width: 400}}/>
+                </div>
+                <div style = {{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                  <h2 className="title has-text-centered"> Coming {movie.date}</h2>
+                  <div style = {{display: "flex", flexDirection: "row", alignItems: "center"}}>
+                    <img src="/metacritic-01.png" alt="Placeholder image" style={{ width: 200, height: 100, marginRight: 50 }}/>
+                    <h1 style={{ fontSize: 70, margin: 0, textColor: "black" }}>{movie.metacritic}</h1> 
+                  </div>
+                  <div style = {{display: "flex", flexDirection: "row", alignItems: "center"}}>
+                    <img src="/rotten_tomato-01.png" alt="Placeholder image" style={{ width: 200, height: 100, marginRight: 50 }}/>
+                    <h1 style={{ fontSize: 70, margin: 0, textColor: "black" }}>{movie.rotten}</h1> 
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
