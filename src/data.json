@@ -2,25 +2,33 @@
   "movies": [
     {
       "title": "The Aeronauts",
-      "rating": 80,
       "image": "http://www.gstatic.com/tv/thumb/v22vodart/16943353/p16943353_v_v8_aa.jpg",
       "date": "December 6, 2019",
       "rotten": 78,
-      "metacritic": 66
+      "metacritic": 66,
+      "description": "In 1862, daredevil balloon pilot Amelia Wren (Felicity Jones) teams up with pioneering meteorologist James Glaisher (Eddie Redmayne) to advance human knowledge of the weather and fly higher than anyone in history. While breaking records and advancing scientific discovery, their voyage to the very edge of existence helps the unlikely pair find their place in the world they have left far below them. But they face physical and emotional challenges in the thin air, as the ascent becomes a fight for survival.",
+      "cast":"Felicity Jones, Eddie Redmayne, Himesh Patel ",
+      "rating":"PG-13 (for some peril and thematic elements)"
     },
     {
       "title": "Black Christmas",
       "image": "http://www.gstatic.com/tv/thumb/v22vodart/17081034/p17081034_v_v8_aa.jpg",
       "date": "December 13, 2019",
       "rotten": 64,
-      "metacritic": 66
+      "metacritic": 66,
+      "description": "Hawthorne College is quieting down for the holidays. One by one, sorority girls on campus are being killed by an unknown stalker. But the killer is about to discover that this generation's young women aren't willing to become hapless victims as they mount a fight to the finish.",
+      "cast":"Imogen Poots, Cary Elwes, Lily Donoghue",
+      "rating": "PG-13 (for violence, terror, thematic content involving sexual assault, language, sexual material and drinking)"
     },
     {
       "title": "Bombshell",
       "image": "http://www.gstatic.com/tv/thumb/movieposters/17307870/p17307870_p_v7_aa.jpg",
       "date": "December 13, 2019",
       "rotten": 34,
-      "metacritic": 47
+      "metacritic": 47,
+      "description":"",
+      "cast":"",
+      "rating":""
     },
     {
       "title": "Jumanji: The Next Level",
